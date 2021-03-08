@@ -29,6 +29,9 @@ public class App {
                 answer = fnum / snum;
                 System.out.println(answer);
                 break;
+            default :
+                System.out.println("Invalid input, Try Again!");
+                break;
         }
     }
 }
