@@ -2,11 +2,20 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner in = new Scanner (System.in);
+        Scanner sc = new Scanner (System.in);
         double fnum, snum, answer;
+        char operator;
         System.out.println("Enter first number: ");
-        fnum = in.nextDouble();
+        fnum = sc.nextDouble();
         System.out.println("Enter second number: ");
-        snum = in.nextDouble();
+        snum = sc.nextDouble();
+        System.out.println("Enter Operation: ");
+        operator = sc.next().charAt(0);
+
+        switch(operator) {
+            case '+' :
+                answer = fnum + snum;
+                System.out.println(answer);
+        }
     }
 }
