@@ -21,6 +21,10 @@ public class App {
                 answer = fnum - snum;
                 System.out.println(answer);
                 break;
+            case '*' :
+                answer = fnum * snum;
+                System.out.println(answer);
+                break;
         }
     }
 }
